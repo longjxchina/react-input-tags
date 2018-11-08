@@ -1,5 +1,5 @@
 {
-  "name": "react-input-tags",
+  "name": "react-input-tags2",
   "version": "3.0.2",
   "description": "React component for inputting tags",
   "main": "lib/index.js",
@@ -23,14 +23,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/baldwmic/react-input-tags.git"
+    "url": "git+https://github.com/longjxchina/react-input-tags.git"
   },
   "author": "Michael Baldwin",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/baldwmic/react-input-tags/issues"
+    "url": "https://github.com/longjxchina/react-input-tags/issues"
   },
-  "homepage": "https://github.com/baldwmic/react-input-tags#readme",
+  "homepage": "https://github.com/longjxchina/react-input-tags#readme",
   "peerDependencies": {
     "react": "^15.4.2"
   },
