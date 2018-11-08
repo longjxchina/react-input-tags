@@ -14,7 +14,8 @@
     "react/no-multi-comp": 0,
     "react/sort-comp": 0,
     "react/forbid-prop-types": 0,
-    "import/no-extraneous-dependencies": 0
+    "import/no-extraneous-dependencies": 0,
+    "linebreak-style":  [0 ,"error", "windows"] 
   },
   "plugins": [
     "react"

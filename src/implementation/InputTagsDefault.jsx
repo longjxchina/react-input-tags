@@ -179,11 +179,8 @@ export class InputTagsDefault extends React.Component {
     });
   }
 
-  removeTag = (tags, removeTagIndex, inputInUse, e) => {
+  removeTag = (tags, removeTagIndex, inputInUse) => {
     const { handleRemove } = this.props;
-
-    e.preventDefault();
-    e.stopPropagation();
 
     // when input is in use, we do not want the input to jump around
     // knowing that eventually an insert or blur will move the input back to the end
@@ -341,7 +338,11 @@ export class InputTagsDefault extends React.Component {
               key={index}
               value={tag}
               handleEdit={() => this.editTag(tags, index)}
-              handleRemove={(e) => this.removeTag(tags, index, false, e)}
+              handleRemove={(e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                this.removeTag(tags, index, false);
+              }}
               {...otherProps}
             />
           )}
